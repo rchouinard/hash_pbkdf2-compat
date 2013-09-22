@@ -1,6 +1,7 @@
 {
     "name": "rych/hash_pbkdf2-compat",
     "description": "Provides hash_pbkdf2() to PHP versions >=5.3,<5.5.",
+    "keywords": ["pbkdf2", "hash_pbkdf2", "compatibility"],
     "license": "MIT",
     "authors": [
         {
