@@ -5,7 +5,10 @@ versions >=5.3,<5.5.
 
 ## Quick start
 
- 1. Use Composer to install the functions:
+Installation is supported via [Composer](http://getcomposer.org/) or [Git](http://git-scm.com/). After installation,
+just `include`/`require` the appropriate file in your application and start using the functions.
+
+ 1. Install via Composer:
 
     ```bash
     curl -sS https://getcomposer.org/installer | php
@@ -16,7 +19,7 @@ versions >=5.3,<5.5.
     require 'vendor/autoload.php';
     ```
 
- 2. Clone the git repository and checkout the tag you want:
+ 2. Install via Git:
 
     ```bash
     git clone https://github.com/rchouinard/hash_pbkdf2-compat.git
