@@ -3,10 +3,13 @@ php:
   - 5.3
   - 5.4
   - 5.5
+# This triggers builds to run on the new TravisCI infrastructure.
+# See: http://docs.travis-ci.com/user/workers/container-based-infrastructure/
+sudo: false
 before_install:
-  - composer self-update --no-interaction --ansi
+  - travis_retry composer self-update
   - composer config notify-on-install false
 install:
-  - composer install --dev --no-progress --no-interaction --ansi --prefer-source
+  - travis_retry composer install --no-interaction --prefer-source
 script:
-  - vendor/bin/phpunit --configuration phpunit.dist.xml
+  - vendor/bin/phpunit
