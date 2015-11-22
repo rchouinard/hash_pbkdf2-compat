@@ -41,7 +41,7 @@ function hash_pbkdf2($algo, $password, $salt, $iterations, $length = 0, $raw_out
     }
 
     // Algorithm implementation
-    $hash_len = strlen(hash($algo, null, true));
+    $hash_len = strlen(hash($algo, null, $raw_output));
     if ($length == 0) {
         $length = $hash_len;
     }
